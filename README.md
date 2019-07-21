@@ -4,6 +4,10 @@
 
 E-Lang was designed to look exactly as English grammer while holding its computer programming power! Written with Python 3.6.8 and is licenced as MIT. This is the Documentation on how to use this language!
 
+## Download
+
+You can obtain current version of E-Lang from [releases](https://www.github.com/ElhamAryanpur/E-Lang/releases)
+
 ## Requirement
 
 To use E-Lang, you should first make sure you have [Python](https://www.python.org) version 3.x and Pip installer and on `Path`! Then you can compile it two ways:

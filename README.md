@@ -10,28 +10,18 @@ You can obtain current version of E-Lang from [releases](https://www.github.com/
 
 ## Requirement
 
-To use E-Lang, you should first make sure you have [Python](https://www.python.org) version 3.x and Pip installer and on `Path`! Then you can compile it two ways:
-1. Pyinstaller
+To use E-Lang, you should first make sure you have [Python](https://www.python.org) version 3.x and Pip installer and on `Path`!
+Later on, you would need to install these as well:
 
-  To use this method, install it with pip: `pip install pyinstaller`. Then navigate to the folder that E-Lang.py lives and type: `python -m pyinstaller --onefile E-Lang.py`. This should make two folders and a file. Navigate to "dist" folder and there will be the compiled E-Lang that you can use on your system!
+`pip install pyinstaller`
 
-2. Nuitka
+`pip install flask`
 
-  Nuitka is a bit tricky and hard to set up but it is recommended to use nuitka for production or less size purposes. To use nuitka, first install it: `pip install nuitka`. Then set up C++ compiler as mentioned in [Nuitka Docs](http://www.nuitka.net). After that you will be able to compile E-Lang compiler with: `python -m nuitka --standalone --follow-imports --show-progress E-Lang.py`
+`pip install pywebview`
   
-## Getting Started
+## Compiling Your Code As Standalone
 
-Before starting to use E-Lang, you should first know some things! E-Lang is a compiler that was built with python! Python is an interpreter which means it is not supposed to be standalone. So you won't be able to compile **your** E-Lang codes as standalone! What you **can** do instead is to write all your code in a file named `c.e` and rename the E-Lang compiled compiler as your program! When someone run E-Lang compiled compiler, it would automatically start executing the `c.e` code! So your program would look like:
-
-- <your_program>.(the system executable architecture)
-- c.e
-
-EXAMPLE:
-
-- MyFirstECode.exe
-- c.e
-
-Maybe in next few releases the standalone feature be made!
+Before starting to use E-Lang, you should first know some things! E-Lang is a compiler that was built with python! Python is an interpreter which means it is not supposed to be standalone. So I found a way around this. The process to compile your code is at end of this documentation!
 
 ## USAGE
 
@@ -185,6 +175,36 @@ Here is code for a simple calculator in E-Lang:
   show Results_are:
   show result
 ```
+
+## COMPILE
+
+To compile your code, you need `pyinstaller` or `nuitka`:
+
+- Pyinstaller: PyInstaller is an easy, fast, and great way of compiling your code as executable. But the bad part is that it's result may be larger in size compared to `nuitka`.
+
+- Nuitka: Nuitka is hard to setup, slow, and secure way of compiling your code as executable. But good part is that it's result may be smaller in size compared to `pyinstaller`.
+
+To compile your code, save it to a desired name on the directory that E-Lang.py is located. then make sure pyinstaller or nuitka is installed. Then open a command-line in the directory and type:
+```
+  python <your code name>.e -c
+```
+Example:
+```
+  python myLovelyCode.e -c
+```
+You will se a new python file named `compiled_<your code name>.py` created on the directory. On the commandline, several question will be asked and if answered honestly and correctly, E-Lang will compile your code. You will find the standalone file on `dist` folder if compiled with `pyinstaller` or in `compiled_< your code name >.dist` folder if compiled with `nuitka`.
+
+##### NOTE:
+
+E-Lang compile your code to work on the operating system you are working with. Example, if you compile your code on `Windows`, it won't work on `Linux` because the way of codes are executed in those operating system are different.
+
+## UPDATES:
+
+22-July-2019:
+
+- Compilation as standalone was added
+- Farsi keywords added. Now you can code E-Lang with Farsi language!
+- Farsi IDE made.
 
 ## Final Words
 

@@ -208,6 +208,24 @@ E-Lang compile your code to work on the operating system you are working with. E
 - Farsi keywords added. Now you can code E-Lang with Farsi language!
 - Farsi IDE made.
 
+## Persian-Support:
+
+Documentation for now can not hold translation, but there will be tutorials and documentation soon! For now, here is the keywords you can use for coding with persian language:
+
+```
+    "show": "نشان-بده",
+    "var": "ذخیره-کن",
+    "sum": "حل-کن",
+    "take": "بگیر",
+    "run": "عمل",
+    "write": "بنویس",
+    "append": "اضافه-کن",
+    "read": "بخوان",
+    "if": "اگر"
+```
+
+Also you can find an IDE I made for writing in Persian language easily on the [Releases](https://github.com/ElhamAryanpur/E-Lang/releases) by name of `EIDE`
+
 ## Final Words
 
 Well, you have came to end of E-Lang's current documentation! If you had further questions or suggestions, you can find me on [Facebook](https://www.facebook.com/elham.aryanpur.10) and on [Instagram](https://www.instagram.com/elham_aryanpur)

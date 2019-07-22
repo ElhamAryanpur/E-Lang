@@ -8,6 +8,8 @@ E-Lang was designed to look exactly as English grammer while holding its compute
 
 You can obtain current version of E-Lang from [releases](https://www.github.com/ElhamAryanpur/E-Lang/releases)
 
+You also need to install Python! [This version](https://www.python.org/downloads/release/python-368/) is recommended!
+
 ## Requirement
 
 To use E-Lang, you should first make sure you have [Python](https://www.python.org) version 3.x and Pip installer and on `Path`!
